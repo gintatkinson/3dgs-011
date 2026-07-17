@@ -18,10 +18,11 @@ Define the coordinate reference frame and geodetic system for geographic locatio
 ### Associated Use Cases & User Stories
 
 #### Associated Use Cases
-*(to be populated during Phase 3)*
+- [ ] [#20](https://github.com/gintatkinson/3dgs-011/blob/main/docs/use-cases/uc-02-configure-reference-frame.md) - Configure Reference Frame and Geodetic System (semantic linkage: configures the reference frame within this epic)
 
 #### Associated User Stories
-*(to be populated during Phase 2)*
+- [ ] [#9](https://github.com/gintatkinson/3dgs-011/blob/main/docs/user-stories/us-01-register-reference-frame.md) - Register Geographic Location Reference Frame (semantic linkage: registers the reference frame)
+- [ ] [#16](https://github.com/gintatkinson/3dgs-011/blob/main/docs/user-stories/us-08-configure-geodetic-accuracy.md) - Configure Coordinate Accuracy and Height Accuracy (semantic linkage: configures accuracy within this epic)
 
 ## 3. Architecture and System Interaction Diagrams
 

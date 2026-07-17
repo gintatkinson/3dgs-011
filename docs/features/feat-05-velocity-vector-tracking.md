@@ -103,6 +103,9 @@ classDiagram
 - `v-east` leaf — covered by this feature
 - `v-up` leaf — covered by this feature
 
+## Realized By Use Cases
+- [ ] [#19](https://github.com/gintatkinson/3dgs-011/blob/main/docs/use-cases/uc-03-track-motion-derive-parameters.md) - Track Motion and Derive Movement Parameters (semantic linkage: this use case tracks velocity vectors and derives speed/heading)
+
 ## 4. Source References
 Structural Schema: ietf-geo-location@2022-02-11.yang — `velocity` container, `v-north` leaf, `v-east` leaf, `v-up` leaf
 Normative Specification: RFC 9179 Section 2.3

@@ -100,6 +100,9 @@ classDiagram
 - `coord-accuracy` leaf — covered by this feature
 - `height-accuracy` leaf — covered by this feature
 
+## Realized By Use Cases
+- [ ] [#20](https://github.com/gintatkinson/3dgs-011/blob/main/docs/use-cases/uc-02-configure-reference-frame.md) - Configure Reference Frame and Geodetic System (semantic linkage: this use case configures the geodetic datum and accuracy)
+
 ## 4. Source References
 Structural Schema: ietf-geo-location@2022-02-11.yang — `geodetic-system` container, `geodetic-datum` leaf, `coord-accuracy` leaf, `height-accuracy` leaf
 Normative Specification: RFC 9179 Section 2.1, Section 6.1

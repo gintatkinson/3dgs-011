@@ -112,6 +112,9 @@ classDiagram
 - `astronomical-body` leaf — covered by this feature
 - `alternate-systems` feature — covered (this feature documents the if-feature dependency)
 
+## Realized By Use Cases
+- [ ] [#20](https://github.com/gintatkinson/3dgs-011/blob/main/docs/use-cases/uc-02-configure-reference-frame.md) - Configure Reference Frame and Geodetic System (semantic linkage: this use case configures the celestial body and optional alternate system)
+
 ## 4. Source References
 Structural Schema: ietf-geo-location@2022-02-11.yang — `reference-frame` container, `alternate-system` leaf, `astronomical-body` leaf
 Normative Specification: RFC 9179 Section 2.1

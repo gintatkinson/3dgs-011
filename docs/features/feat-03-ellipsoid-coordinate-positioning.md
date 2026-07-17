@@ -88,6 +88,9 @@ classDiagram
 - `longitude` leaf — covered by this feature
 - `height` leaf — covered by this feature
 
+## Realized By Use Cases
+- [ ] [#17](https://github.com/gintatkinson/3dgs-011/blob/main/docs/use-cases/uc-01-manage-geographic-location.md) - Manage Complete Geographic Location Record (semantic linkage: this use case stores ellipsoidal coordinates)
+
 ## 4. Source References
 Structural Schema: ietf-geo-location@2022-02-11.yang — `choice location`, `case ellipsoid`, `latitude` leaf, `longitude` leaf, `height` leaf
 Normative Specification: RFC 9179 Section 2.2

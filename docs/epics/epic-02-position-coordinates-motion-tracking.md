@@ -20,10 +20,17 @@ Provide geographic position coordinates and motion tracking for objects located 
 ### Associated Use Cases & User Stories
 
 #### Associated Use Cases
-*(to be populated during Phase 3)*
+- [ ] [#17](https://github.com/gintatkinson/3dgs-011/blob/main/docs/use-cases/uc-01-manage-geographic-location.md) - Manage Complete Geographic Location Record (semantic linkage: manages complete geo-location records within this epic)
+- [ ] [#19](https://github.com/gintatkinson/3dgs-011/blob/main/docs/use-cases/uc-03-track-motion-derive-parameters.md) - Track Motion and Derive Movement Parameters (semantic linkage: tracks motion and derives movement parameters within this epic)
+- [ ] [#18](https://github.com/gintatkinson/3dgs-011/blob/main/docs/use-cases/uc-04-manage-location-lifecycle.md) - Manage Location Lifecycle and Temporal Validity (semantic linkage: manages lifecycle and validity within this epic)
 
 #### Associated User Stories
-*(to be populated during Phase 2)*
+- [ ] [#10](https://github.com/gintatkinson/3dgs-011/blob/main/docs/user-stories/us-02-record-ellipsoid-location.md) - Record Ellipsoidal Location Coordinates (semantic linkage: records ellipsoidal location coordinates)
+- [ ] [#11](https://github.com/gintatkinson/3dgs-011/blob/main/docs/user-stories/us-03-record-cartesian-location.md) - Record Cartesian Location Coordinates (semantic linkage: records Cartesian location coordinates)
+- [ ] [#13](https://github.com/gintatkinson/3dgs-011/blob/main/docs/user-stories/us-04-track-velocity-vector.md) - Track Velocity Vector for Moving Object (semantic linkage: tracks velocity vector)
+- [ ] [#12](https://github.com/gintatkinson/3dgs-011/blob/main/docs/user-stories/us-05-derive-speed-heading.md) - Derive Speed and Heading from Velocity Components (semantic linkage: derives speed and heading)
+- [ ] [#14](https://github.com/gintatkinson/3dgs-011/blob/main/docs/user-stories/us-06-handle-expired-location.md) - Detect and Handle Expired Geo-Location Data (semantic linkage: handles expiry)
+- [ ] [#15](https://github.com/gintatkinson/3dgs-011/blob/main/docs/user-stories/us-07-record-timestamp.md) - Record Location Measurement Timestamp (semantic linkage: records timestamp)
 
 ## 3. Architecture and System Interaction Diagrams
 

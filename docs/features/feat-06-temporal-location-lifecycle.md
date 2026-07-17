@@ -84,6 +84,9 @@ classDiagram
 - `timestamp` leaf — covered by this feature
 - `valid-until` leaf — covered by this feature
 
+## Realized By Use Cases
+- [ ] [#18](https://github.com/gintatkinson/3dgs-011/blob/main/docs/use-cases/uc-04-manage-location-lifecycle.md) - Manage Location Lifecycle and Temporal Validity (semantic linkage: this use case manages timestamps and expiration)
+
 ## 4. Source References
 Structural Schema: ietf-geo-location@2022-02-11.yang — `timestamp` leaf, `valid-until` leaf
 Normative Specification: RFC 9179 Section 2.5
