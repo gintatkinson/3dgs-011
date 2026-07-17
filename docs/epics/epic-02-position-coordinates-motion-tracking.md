@@ -31,7 +31,6 @@ Provide geographic position coordinates and motion tracking for objects located 
 - [ ] [#12](https://github.com/gintatkinson/3dgs-011/blob/main/docs/user-stories/us-05-derive-speed-heading.md) - Derive Speed and Heading from Velocity Components (semantic linkage: derives speed and heading)
 - [ ] [#14](https://github.com/gintatkinson/3dgs-011/blob/main/docs/user-stories/us-06-handle-expired-location.md) - Detect and Handle Expired Geo-Location Data (semantic linkage: handles expiry)
 - [ ] [#15](https://github.com/gintatkinson/3dgs-011/blob/main/docs/user-stories/us-07-record-timestamp.md) - Record Location Measurement Timestamp (semantic linkage: records timestamp)
-
 ## 3. Architecture and System Interaction Diagrams
 
 ### Subsystem Component Definition

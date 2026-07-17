@@ -23,7 +23,6 @@ Define the coordinate reference frame and geodetic system for geographic locatio
 #### Associated User Stories
 - [ ] [#9](https://github.com/gintatkinson/3dgs-011/blob/main/docs/user-stories/us-01-register-reference-frame.md) - Register Geographic Location Reference Frame (semantic linkage: registers the reference frame)
 - [ ] [#16](https://github.com/gintatkinson/3dgs-011/blob/main/docs/user-stories/us-08-configure-geodetic-accuracy.md) - Configure Coordinate Accuracy and Height Accuracy (semantic linkage: configures accuracy within this epic)
-
 ## 3. Architecture and System Interaction Diagrams
 
 ### Subsystem Component Definition
