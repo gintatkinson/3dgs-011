@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-07-17T17:25:34.903850Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only",
+    "exit_code": 1,
+    "downstream_repo": "",
+    "commit_hash": ""
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Epic epic-02-position-coordinates-motion-tracking.md is missing section '## 6. Source References'.",
+      "Epic epic-02-position-coordinates-motion-tracking.md contains a UML Class Diagram with no relationships. Isolated classes are prohibited; you must illustrate containment/inheritance/choice composition.",
+      "Epic epic-02-position-coordinates-motion-tracking.md contains class 'PositionMotionSubsystem' with zero relationships. Isolated classes are prohibited.",
+      "Epic epic-01-reference-frame-geodetic-system.md is missing section '## 6. Source References'.",
+      "Epic epic-01-reference-frame-geodetic-system.md contains a UML Class Diagram with no relationships. Isolated classes are prohibited; you must illustrate containment/inheritance/choice composition.",
+      "Epic epic-01-reference-frame-geodetic-system.md contains class 'ReferenceFrameSubsystem' with zero relationships. Isolated classes are prohibited."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

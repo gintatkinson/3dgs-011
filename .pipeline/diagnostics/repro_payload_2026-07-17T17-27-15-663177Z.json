@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-07-17T17:27:15.663177Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only",
+    "exit_code": 1,
+    "downstream_repo": "",
+    "commit_hash": ""
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Epic epic-02-position-coordinates-motion-tracking.md is missing section '## System State Machine Diagram'.",
+      "Epic epic-01-reference-frame-geodetic-system.md is missing section '## System State Machine Diagram'."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}
