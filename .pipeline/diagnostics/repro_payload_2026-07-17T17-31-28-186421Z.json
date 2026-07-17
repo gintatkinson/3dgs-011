@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-07-17T17:31:28.186421Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-011.git",
+    "commit_hash": "adf3407f695120f016ea5b1f10edd281a7d1a3a8"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Feature feat-01-celestial-body-alternate-system.md contains class 'GeoLocationService' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-celestial-body-alternate-system.md contains class 'ReferenceFrameRepository' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-celestial-body-alternate-system.md contains class 'NetworkAdministrator' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-celestial-body-alternate-system.md contains class 'LocationProvider' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-celestial-body-alternate-system.md contains class 'TrackingSystem' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-celestial-body-alternate-system.md contains class 'MeasurementSystem' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-celestial-body-alternate-system.md contains a disconnected UML Class Diagram. Classes ['ReferenceFrameRepository', 'NetworkAdministrator', 'LocationProvider', 'GeoLocationService', 'MeasurementSystem', 'TrackingSystem'] are not structurally connected to 'GeoLocationContainer'.",
+      "Feature feat-03-ellipsoid-coordinate-positioning.md contains class 'CoordinateRepository' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-03-ellipsoid-coordinate-positioning.md contains a disconnected UML Class Diagram. Classes ['CoordinateRepository'] are not structurally connected to 'Location'.",
+      "Feature feat-06-temporal-location-lifecycle.md contains class 'TemporalMetadataRepository' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-06-temporal-location-lifecycle.md contains class 'TimeService' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-06-temporal-location-lifecycle.md contains class 'DataConsumer' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-06-temporal-location-lifecycle.md contains a disconnected UML Class Diagram. Classes ['TimeService', 'DataConsumer', 'TemporalMetadataRepository'] are not structurally connected to 'TemporalMetadata'.",
+      "Feature feat-05-velocity-vector-tracking.md contains class 'VelocityRepository' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-05-velocity-vector-tracking.md contains class 'VelocityCalculationService' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-05-velocity-vector-tracking.md contains class 'ConsumingApplication' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-05-velocity-vector-tracking.md contains a disconnected UML Class Diagram. Classes ['VelocityCalculationService', 'VelocityRepository', 'ConsumingApplication'] are not structurally connected to 'VelocityVector'.",
+      "Feature feat-02-geodetic-datum-accuracy.md contains class 'GeodeticSystemController' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-02-geodetic-datum-accuracy.md contains class 'GeodeticRepository' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-02-geodetic-datum-accuracy.md contains class 'SystemAdministrator' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-02-geodetic-datum-accuracy.md contains a disconnected UML Class Diagram. Classes ['SystemAdministrator', 'GeodeticRepository', 'GeodeticSystemController'] are not structurally connected to 'ReferenceFrame'.",
+      "User Story us-05-derive-speed-heading.md sequence diagram message 'calcSvc->>velRepo: fetchVelocityComponents(velocityId: String)' calls operation 'fetchVelocityComponents' which is not defined on class 'VelocityRepository' in any class diagram."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

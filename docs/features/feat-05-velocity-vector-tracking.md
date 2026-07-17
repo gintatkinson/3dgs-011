@@ -29,6 +29,24 @@ classDiagram
         <<DataTransferObject>>
     }
     GeoLocationContainer *-- VelocityVector
+    class VelocityRepository {
+        +Boolean[1] validateVelocityComponents(Real vn Real ve Real vu)
+        +VelocityVector[1] storeVelocity(Real vn Real ve Real vu)
+        +Real[1] fetchVNorth(String velocityId)
+        +Real[1] fetchVEast(String velocityId)
+        +Object[1] fetchVelocityComponents(String velocityId)
+    }
+    class VelocityCalculationService {
+        +Real[1] computeSpeed(Real vn Real ve)
+        +Real[1] computeHeading(Real ve Real vn)
+        +Real[1] getDerivedSpeedAndHeading(String velocityId)
+    }
+    class ConsumingApplication {
+        +String appId [1]
+    }
+    VelocityRepository --> VelocityVector : manages
+    VelocityCalculationService --> VelocityRepository : uses
+    ConsumingApplication --> VelocityCalculationService : activates
 ```
 
 ## Interface Requirements

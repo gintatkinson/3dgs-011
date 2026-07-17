@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-07-17T17:31:46.101157Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-011.git",
+    "commit_hash": "adf3407f695120f016ea5b1f10edd281a7d1a3a8"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Feature feat-01-celestial-body-alternate-system.md contains class 'ReferenceFrameRepository' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-celestial-body-alternate-system.md contains a disconnected UML Class Diagram. Classes ['ReferenceFrameRepository'] are not structurally connected to 'GeoLocationContainer'."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

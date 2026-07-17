@@ -33,6 +33,12 @@ classDiagram
     }
     GeoLocationContainer *-- Location
     Location <|-- EllipsoidLocation
+    class CoordinateRepository {
+        +Boolean[1] validateCoordinate(Real lat Real lon)
+        +Location[1] storeEllipsoid(Real lat Real lon Real height)
+        +Location[1] storeCartesian(Real x Real y Real z)
+    }
+    CoordinateRepository --> Location : manages
 ```
 
 ## Interface Requirements

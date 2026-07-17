@@ -32,6 +32,21 @@ classDiagram
     }
     GeoLocationContainer *-- ReferenceFrame
     ReferenceFrame *-- GeodeticSystem
+    class GeodeticSystemController {
+        +Boolean[1] setCoordinateAccuracy(Real accuracy)
+        +Boolean[1] setHeightAccuracy(Real accuracy)
+    }
+    class GeodeticRepository {
+        +Boolean[1] storeAccuracy(String sysId Real coordAcc Real heightAcc)
+        +Boolean[1] storeCoordAccuracy(String sysId Real accuracy)
+        +Boolean[1] storeHeightAccuracy(String sysId Real accuracy)
+    }
+    class SystemAdministrator {
+        +String adminId [1]
+    }
+    GeodeticSystemController --> GeodeticSystem : manages
+    GeodeticRepository --> GeodeticSystem : persists
+    SystemAdministrator --> GeodeticSystemController : configures
 ```
 
 ## Interface Requirements

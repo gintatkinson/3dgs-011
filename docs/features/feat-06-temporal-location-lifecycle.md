@@ -27,6 +27,20 @@ classDiagram
         <<DataTransferObject>>
     }
     GeoLocationContainer *-- TemporalMetadata
+    class TemporalMetadataRepository {
+        +String[1] storeTimestamp(String locationId String timestamp)
+        +String[0..1] fetchValidUntil(String locationId)
+        +Boolean[1] markExpired(String locationId)
+    }
+    class TimeService {
+        +DateTime[1] getCurrentTime()
+    }
+    class DataConsumer {
+        +String consumerId [1]
+    }
+    TemporalMetadataRepository --> TemporalMetadata : manages
+    DataConsumer --> GeoLocationContainer : reads
+    TimeService --> TemporalMetadataRepository : feeds
 ```
 
 ## Interface Requirements

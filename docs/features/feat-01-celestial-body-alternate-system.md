@@ -31,6 +31,37 @@ classDiagram
     }
     GeoLocationContainer *-- ReferenceFrame
     ReferenceFrame *-- GeodeticSystem
+    class GeoLocationService {
+        +Boolean[1] registerReferenceFrame(String body String datum)
+        +Boolean[1] setEllipsoidLocation(Real lat Real lon Real height)
+        +Boolean[1] setCartesianLocation(Real x Real y Real z)
+        +Boolean[1] setVelocity(Real vn Real ve Real vu)
+        +Object[1] getLocation(String locationId)
+        +Object[1] recordLocationWithTimestamp(Real lat Real lon String ts)
+        +Boolean[1] validateTimestamp(String ts)
+    }
+    class ReferenceFrameRepository {
+        +ReferenceFrame[1] storeReferenceFrame(String body String datum)
+    }
+    class NetworkAdministrator {
+        +String userId [1]
+    }
+    class LocationProvider {
+        +String providerId [1]
+    }
+    class TrackingSystem {
+        +String systemId [1]
+    }
+    class MeasurementSystem {
+        +String systemId [1]
+    }
+    GeoLocationService --> ReferenceFrame : manages
+    GeoLocationService --> GeoLocationContainer : manages
+    ReferenceFrameRepository --> ReferenceFrame : persists
+    NetworkAdministrator --> GeoLocationService : activates
+    LocationProvider --> GeoLocationService : activates
+    TrackingSystem --> GeoLocationService : activates
+    MeasurementSystem --> GeoLocationService : activates
 ```
 
 ## Interface Requirements

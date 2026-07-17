@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-07-17T17:29:27.594471Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-011.git",
+    "commit_hash": "adf3407f695120f016ea5b1f10edd281a7d1a3a8"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "User Story us-04-track-velocity-vector.md sequence diagram lifeline 'tracker' specifies classifier 'TrackingSystem' which is not defined in any feature class diagram.",
+      "User Story us-04-track-velocity-vector.md sequence diagram lifeline 'locSvc' specifies classifier 'GeoLocationService' which is not defined in any feature class diagram.",
+      "User Story us-04-track-velocity-vector.md sequence diagram lifeline 'velRepo' specifies classifier 'VelocityRepository' which is not defined in any feature class diagram.",
+      "User Story us-04-track-velocity-vector.md contains a checklist item with a missing or non-absolute URL: '- [ ] #5 - Track Velocity Vector for Moving Objects (semantic linkage: this user story directly exercises the velocity tracking feature)'.",
+      "User Story us-06-handle-expired-location.md sequence diagram lifeline 'consumer' specifies classifier 'DataConsumer' which is not defined in any feature class diagram.",
+      "User Story us-06-handle-expired-location.md sequence diagram lifeline 'locSvc' specifies classifier 'GeoLocationService' which is not defined in any feature class diagram.",
+      "User Story us-06-handle-expired-location.md sequence diagram lifeline 'timeSvc' specifies classifier 'TimeService' which is not defined in any feature class diagram.",
+      "User Story us-06-handle-expired-location.md sequence diagram lifeline 'stateRepo' specifies classifier 'LocationStateRepository' which is not defined in any feature class diagram.",
+      "User Story us-06-handle-expired-location.md sequence diagram return message 'locSvc-->consumer: locationData : GeoLocation (expired=true)' looks like an operation call (contains parentheses). Return messages must be simple assignments or return values (e.g. status : Status).",
+      "User Story us-06-handle-expired-location.md sequence diagram return message 'locSvc-->consumer: locationData : GeoLocation (expired=false)' looks like an operation call (contains parentheses). Return messages must be simple assignments or return values (e.g. status : Status).",
+      "User Story us-06-handle-expired-location.md contains a checklist item with a missing or non-absolute URL: '- [ ] #6 - Manage Temporal Location Lifecycle and Expiration (semantic linkage: the valid-until attribute directly enables expiration detection)'.",
+      "User Story us-06-handle-expired-location.md contains a checklist item with a missing or non-absolute URL: '- [ ] #3 - Specify Ellipsoid Geodetic Coordinates (semantic linkage: expired location data may require re-acquisition of ellipsoidal coordinates)'.",
+      "User Story us-05-derive-speed-heading.md sequence diagram lifeline 'consumer' specifies classifier 'ConsumingApplication' which is not defined in any feature class diagram.",
+      "User Story us-05-derive-speed-heading.md sequence diagram lifeline 'calcSvc' specifies classifier 'VelocityCalculationService' which is not defined in any feature class diagram.",
+      "User Story us-05-derive-speed-heading.md sequence diagram lifeline 'velRepo' specifies classifier 'VelocityRepository' which is not defined in any feature class diagram.",
+      "User Story us-05-derive-speed-heading.md sequence diagram return message 'calcSvc-->consumer: speed : Real, heading : Real (heading=90 or 270)' looks like an operation call (contains parentheses). Return messages must be simple assignments or return values (e.g. status : Status).",
+      "User Story us-05-derive-speed-heading.md contains a checklist item with a missing or non-absolute URL: '- [ ] #5 - Track Velocity Vector for Moving Objects (semantic linkage: derives speed and heading from the velocity vector components)'.",
+      "User Story us-02-record-ellipsoid-location.md sequence diagram lifeline 'prov' specifies classifier 'LocationProvider' which is not defined in any feature class diagram.",
+      "User Story us-02-record-ellipsoid-location.md sequence diagram lifeline 'locSvc' specifies classifier 'GeoLocationService' which is not defined in any feature class diagram.",
+      "User Story us-02-record-ellipsoid-location.md sequence diagram lifeline 'coordRepo' specifies classifier 'CoordinateRepository' which is not defined in any feature class diagram.",
+      "User Story us-02-record-ellipsoid-location.md contains a checklist item with a missing or non-absolute URL: '- [ ] #3 - Specify Ellipsoid Geodetic Coordinates (semantic linkage: this user story directly exercises the ellipsoidal coordinate feature)'.",
+      "User Story us-07-record-timestamp.md sequence diagram lifeline 'msr' specifies classifier 'MeasurementSystem' which is not defined in any feature class diagram.",
+      "User Story us-07-record-timestamp.md sequence diagram lifeline 'locSvc' specifies classifier 'GeoLocationService' which is not defined in any feature class diagram.",
+      "User Story us-07-record-timestamp.md sequence diagram lifeline 'timeRepo' specifies classifier 'TemporalMetadataRepository' which is not defined in any feature class diagram.",
+      "User Story us-07-record-timestamp.md contains a checklist item with a missing or non-absolute URL: '- [ ] #6 - Manage Temporal Location Lifecycle and Expiration (semantic linkage: the timestamp is a temporal metadata attribute)'.",
+      "User Story us-07-record-timestamp.md contains a checklist item with a missing or non-absolute URL: '- [ ] #3 - Specify Ellipsoid Geodetic Coordinates (semantic linkage: location coordinates are recorded alongside the timestamp)'.",
+      "User Story us-01-register-reference-frame.md sequence diagram lifeline 'admin' specifies classifier 'NetworkAdministrator' which is not defined in any feature class diagram.",
+      "User Story us-01-register-reference-frame.md sequence diagram lifeline 'locService' specifies classifier 'GeoLocationService' which is not defined in any feature class diagram.",
+      "User Story us-01-register-reference-frame.md sequence diagram lifeline 'refRepo' specifies classifier 'ReferenceFrameRepository' which is not defined in any feature class diagram.",
+      "User Story us-01-register-reference-frame.md contains a checklist item with a missing or non-absolute URL: '- [ ] #1 - Define Celestial Body and Alternate System Reference (semantic linkage: the reference frame requires astronomical body identification)'.",
+      "User Story us-01-register-reference-frame.md contains a checklist item with a missing or non-absolute URL: '- [ ] #2 - Configure Geodetic Datum and Coordinate Accuracy (semantic linkage: the reference frame includes geodetic system configuration)'.",
+      "User Story us-03-record-cartesian-location.md sequence diagram lifeline 'prov' specifies classifier 'LocationProvider' which is not defined in any feature class diagram.",
+      "User Story us-03-record-cartesian-location.md sequence diagram lifeline 'locSvc' specifies classifier 'GeoLocationService' which is not defined in any feature class diagram.",
+      "User Story us-03-record-cartesian-location.md sequence diagram lifeline 'coordRepo' specifies classifier 'CoordinateRepository' which is not defined in any feature class diagram.",
+      "User Story us-03-record-cartesian-location.md contains a checklist item with a missing or non-absolute URL: '- [ ] #4 - Specify Cartesian Spatial Coordinates (semantic linkage: this user story directly exercises the cartesian coordinate feature)'.",
+      "User Story us-08-configure-geodetic-accuracy.md sequence diagram lifeline 'admin' specifies classifier 'SystemAdministrator' which is not defined in any feature class diagram.",
+      "User Story us-08-configure-geodetic-accuracy.md sequence diagram lifeline 'geoCtrl' specifies classifier 'GeodeticSystemController' which is not defined in any feature class diagram.",
+      "User Story us-08-configure-geodetic-accuracy.md sequence diagram lifeline 'gRepo' specifies classifier 'GeodeticRepository' which is not defined in any feature class diagram.",
+      "User Story us-08-configure-geodetic-accuracy.md contains a checklist item with a missing or non-absolute URL: '- [ ] #2 - Configure Geodetic Datum and Coordinate Accuracy (semantic linkage: this user story directly exercises the accuracy configuration feature)'."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}
